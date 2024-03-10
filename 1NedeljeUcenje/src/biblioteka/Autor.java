@@ -11,4 +11,5 @@ public class Autor {
     	// TODO Auto-generated method stub
     	return super.equals(obj);
     }
+    
 }
