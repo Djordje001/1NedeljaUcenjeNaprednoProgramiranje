@@ -9,13 +9,14 @@ public class Biblioteka implements BibliotekaInterface {
 	@Override
 	public void dodajKnjigu(Knjiga knjiga) {
 		
-		
+		if(true) return;
+			
 	}
 
 	@Override
 	public void obrisiKnjigu(Knjiga knjiga) {
 		
-		
+		if(true) return;
 	}
 
 	@Override
@@ -26,7 +27,10 @@ public class Biblioteka implements BibliotekaInterface {
 
 	@Override
 	public List<Knjiga> pronadjiKnjigu(Autor autor, long ISBN, String naslov, String izdavac) {
-		if(autor==null && ISBN<=0 && naslov==null && izdavac==null) return knjige;
+
+		if(autor==null && ISBN<=0 && naslov==null && izdavac==null)
+			throw new IllegalArgumentException("Morate uneti bar neki kriterijum za prettragu");
+
 		return null;
 	}
 	
